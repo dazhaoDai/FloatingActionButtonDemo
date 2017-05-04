@@ -19,15 +19,13 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
-
     <com.ddz.floatingactionbutton.FloatingActionMenu
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        app:fab_labelStyle="@style/lable_style"
-        android:layout_margin="@dimen/fab_margin">
+        android:layout_margin="@dimen/fab_margin"
+        app:fab_labelStyle="@style/lable_style">
 
         <com.ddz.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
