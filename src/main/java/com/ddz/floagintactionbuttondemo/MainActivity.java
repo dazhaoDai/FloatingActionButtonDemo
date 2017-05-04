@@ -7,34 +7,39 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.ddz.floatingactionbutton.FloatingActionButton;
+import com.ddz.floatingactionbutton.FloatingActionMenu;
 
 public class MainActivity extends AppCompatActivity {
+
+    private FloatingActionMenu fl_menu;
+    private FloatingActionButton fl_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+        fl_menu = (FloatingActionMenu) findViewById(R.id.fab1);
+        fl_menu.setButtonIcon(R.drawable.icon_like);
+        fl_menu.setOnFloatingActionsMenuUpdateListener(new FloatingActionMenu.OnFloatingActionsMenuUpdateListener() {
+            @Override
+            public void onMenuExpanded() {
+                Toast.makeText(MainActivity.this, "打开", Toast.LENGTH_SHORT).show();
+            }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+            @Override
+            public void onMenuCollapsed() {
+                Toast.makeText(MainActivity.this, "折叠", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        fl_button = (FloatingActionButton) findViewById(R.id.fl_button);
+        fl_button.setTitle("你好");
+        fl_button.setIcon(R.drawable.icon_share);
+        fl_button.setSize(20);
+        fl_button.setColorNormal(getResources().getColor(R.color.colorAccent));
+        fl_button.setColorPressed(getResources().getColor(R.color.colorAccent));
     }
 }

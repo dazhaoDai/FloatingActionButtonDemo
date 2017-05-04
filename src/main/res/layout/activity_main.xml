@@ -11,6 +11,7 @@
         android:layout_margin="@dimen/fab_margin">
 
         <com.ddz.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fl_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_icon="@drawable/icon_share"
@@ -32,6 +33,8 @@
         app:fab_addButton_icon="@drawable/icon_follow"
         app:fab_labelStyle="@style/lable_style">
 
+        <!-- 设置fab_title 时，必须设置 fab_labelStyle ，才会生效-->
+
         <com.ddz.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +55,7 @@
 
 
     <com.ddz.floatingactionbutton.FloatingActionMenu
-        android:id="@+id/fab5"
+        android:id="@+id/fab3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -79,7 +82,7 @@
     </com.ddz.floatingactionbutton.FloatingActionMenu>
 
     <com.ddz.floatingactionbutton.FloatingActionMenu
-        android:id="@+id/fab3"
+        android:id="@+id/fab4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
