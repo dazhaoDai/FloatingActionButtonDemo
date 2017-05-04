@@ -1,30 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </android.support.design.widget.AppBarLayout>
-
     <com.ddz.floatingactionbutton.FloatingActionMenu
-        android:id="@+id/fab"
+        android:id="@+id/fab1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin">
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_share"
+            app:fab_size="mini" />
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_like"
+            app:fab_size="normal" />
+    </com.ddz.floatingactionbutton.FloatingActionMenu>
+
+    <com.ddz.floatingactionbutton.FloatingActionMenu
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_margin="@dimen/fab_margin"
+        app:fab_addButton_icon="@drawable/icon_follow"
+        app:fab_labelStyle="@style/lable_style">
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_icon="@drawable/icon_follow"
+            app:fab_size="mini"
+            app:fab_title="顶部" />
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_like"
+            app:fab_size="normal"
+            app:fab_stroke_visible="false"
+            app:fab_title="底部" />
+    </com.ddz.floatingactionbutton.FloatingActionMenu>
+
+
+    <com.ddz.floatingactionbutton.FloatingActionMenu
+        android:id="@+id/fab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        app:fab_addButtonColorNormal="@color/colorPrimary"
+        app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        app:fab_addButtonPlusIconColor="@color/colorAccent"
+        app:fab_addButtonSize="mini"
         app:fab_labelStyle="@style/lable_style">
 
         <com.ddz.floatingactionbutton.FloatingActionButton
@@ -37,9 +73,30 @@
         <com.ddz.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_icon="@drawable/icon_share"
+            app:fab_icon="@drawable/icon_like"
+            app:fab_size="normal"
+            app:fab_title="底部" />
+    </com.ddz.floatingactionbutton.FloatingActionMenu>
+
+    <com.ddz.floatingactionbutton.FloatingActionMenu
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        app:fab_addButton_collapsed_rotation="0"
+        app:fab_addButton_expanded_rotation="45"
+        app:fab_addButton_rotation_duration="800"
+        app:fab_labelStyle="@style/lable_style"
+        app:fab_labelsPosition="right">
+
+        <com.ddz.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/icon_follow"
             app:fab_size="mini"
-            app:fab_title="中间" />
+            app:fab_title="顶部" />
 
         <com.ddz.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
@@ -48,4 +105,6 @@
             app:fab_size="normal"
             app:fab_title="底部" />
     </com.ddz.floatingactionbutton.FloatingActionMenu>
-</android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
