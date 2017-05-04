@@ -59,4 +59,4 @@
     </com.ddz.floatingactionbutton.FloatingActionMenu>
 </android.support.design.widget.CoordinatorLayout>
 ```
-默认不设置FloatingActionMenu的背景图，通过fab_icon来 FloatingActionButton的背景图，通过 fab_size设置FloatingActionButton的大小，size有normal和mini两种选择，运行效果
+通过布局可以看出，默认FloatingActionMenu不设置背景图，而FloatingActionButton通过fab_icon分别设置背景图，通过fab_size设置大小
