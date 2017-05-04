@@ -15,11 +15,12 @@
 #### 1.添加依赖
 
 添加依赖，在项目的build.gradle中添加
+
 ```
 dependencies {
     compile 'com.ddz.materialdesign:FloatingActionButton:1.0.4'
 }
-'```
+```
 
 #### 2. 布局
 ```
