@@ -124,12 +124,17 @@
 
 ```
 
-布局很简单，一共四个FloatingActionMenu，每个Menu中两个FloatingActionButton，为了更好的理解每个Menu中属性的含义，罗列出FloatingActionMenu的自定义属性
+
+布局很简单，一共四个FloatingActionMenu，每个Menu中两个FloatingActionButton，具体效果看图
+![效果](https://github.com/dazhaoDai/FloatingActionButtonDemo/blob/master/src/main/java/com/ddz/pic/GIF.gif)
+
+为了更好的理解每个Menu中属性的含义，罗列出FloatingActionMenu的自定义属性
 
 ###### FloatingActionMenu自定义属性：
-> fab_addButtonColorNormal  //菜单按钮默认颜色
-  fab_addButtonColorPressed   //菜单按钮按下的颜色
-  fab_addButtonPlusIconColor  //菜单按钮上的“+”号颜色，当设置了icon，“+”不会显示
+
+``` fab_addButtonColorNormal  //菜单按钮默认颜色
+  fab_addButtonColorPressed   //菜单按钮按下的颜色
+  fab_addButtonPlusIconColor  //菜单按钮上的“+”号颜色，当设置了icon，“+”不会显示
   fab_addButtonSize        //菜单按钮的大小，有normal 和 mini 两种状态
   fab_addButtonStrokeVisible   //菜单按钮“+”边框是否可见
   fab_addButton_collapsed_rotation  //菜单按钮折叠时的角度
@@ -139,12 +144,14 @@
   fab_expandDirection     //菜单按钮展开的方向，有up/down/left/right四个方向，left/right时，Button不可以设置标签文字 
   fab_labelsPosition     //Button的标签文字相对Button的位置，有 left /right两种
   fab_labelStyle       //设置标签文字的Style，只有Menu设置了 fab_labelStyle， Button才可以显示文字
-  
-  ###### FloatingActionButton自定义属性：
-  > colorDisabled   //Button按钮不可操作时的颜色
-    fab_colorNormal      //Button按钮正常状态的颜色
-    fab_colorPressed     //Button按钮按下时的颜色
-    fab_icon              //Button按钮设置图标
-    fab_size              ///Button按钮设置大小，同样有 normal 和 mini 两种大小
-    fab_stroke_visible    //Button按钮边框是否可见  
-    fab_title              //Button按钮的标签文字
+  ```
+###### FloatingActionButton自定义属性：
+
+```colorDisabled   //Button按钮不可操作时的颜色
+   fab_colorNormal      //Button按钮正常状态的颜色
+   fab_colorPressed     //Button按钮按下时的颜色
+   fab_icon              //Button按钮设置图标
+   fab_size              ///Button按钮设置大小，同样有 normal 和 mini 两种大小
+   fab_stroke_visible    //Button按钮边框是否可见  
+   fab_title              //Button按钮的标签文字
+```
