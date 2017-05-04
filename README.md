@@ -214,7 +214,8 @@ Menu 没有任何设置， 上部分Button设置大小为mini，设置Icon，下
             app:fab_title="底部" />
     </com.ddz.floatingactionbutton.FloatingActionMenu>
 ```
-Menu部分： 设置了图标 fab_addButton_icon，设置了fab_labelStyle，
+Menu部分： 设置了图标 fab_addButton_icon，设置了fab_labelStyle
+
 Button部分 ：上部分Button设置了按下颜色 fab_colorPressed和正常的颜色 fab_colorNormal，以及图标fab_icon，大小fab_size为mini，设置了标签         fab_title  ，下部分 Button 设置了 图标fab_icon，按钮大小 fab_size，按钮边缘不可见 fab_stroke_visible ，标签文字 fab_title
     
 第三个Menu：  fab3
@@ -249,6 +250,7 @@ Button部分 ：上部分Button设置了按下颜色 fab_colorPressed和正常�
 ```
 Menu部分：设置了按钮 按下的颜色fab_addButtonColorNormal、正常的颜色fab_addButtonColorPressed、按钮“+” 的颜色 fab_addButtonPlusIconColor
 按钮大小fab_addButtonSize、以及fab_labelStyle
+
 Button部分： 上部分 设置了图标 fab_icon、 button大小 fab_size、 标签文字 fab_title   ，下部分同上
     
 第四个Menu： fab4
@@ -283,11 +285,12 @@ Button部分： 上部分 设置了图标 fab_icon、 button大小 fab_size、 �
     </com.ddz.floatingactionbutton.FloatingActionMenu>
 ```
 Menu部分 ：设置了折叠角度 fab_addButton_collapsed_rotation， 展开角度fab_addButton_expanded_rotation，展开或折叠时间       fab_addButton_rotation_duration，设置了标签文字样式 fab_labelStyle， 设置了文字在按钮的位置 fab_labelsPosition
+
 Button部分：设置了icon、size和title
     
 通过上面四个Menu对比，很清楚的看到每个Menu的区别，以及对应的属性作用
     
-###### FloatingActionMenu 补充
+##### FloatingActionMenu 补充
 FloatingActionMenu有展开折叠的监听事件
 ```
       fl_menu = (FloatingActionMenu) findViewById(R.id.fab1);
@@ -306,8 +309,8 @@ FloatingActionMenu有展开折叠的监听事件
         fl_menu.setButtonIcon(R.drawable.icon_like);
 ```
         
- ###### FloatingActionButton 补充
- 代码中可以对Button的进行更改
+##### FloatingActionButton 补充
+代码中可以对Button的进行更改
         
 ```
          fl_button = (FloatingActionButton) findViewById(R.id.fl_button);
