@@ -4,12 +4,19 @@
 -
 ![截图](https://github.com/dazhaoDai/FloatingActionButtonDemo/blob/master/src/main/java/com/ddz/pic/demo.gif)
 
-根据GIF可以看出，是一个可折叠菜单式的FloatingActionButton，在部分App中我们也能见到这种效果，下面就一步步学习怎么使用，定制自己的FloatingActionButton
+根据GIF可以看出，是一个可折叠菜单式的FloatingActionButton，在部分App中我们也能见到这种效果，下面就一步步学习怎么使用，根据个人需求，开发自己定制的Material Design 风格的 折叠 FloatingActionButton； 
 
-###### 1.添加依赖
+项目依赖的是[一个自由定制的Material Design风格FloatingActionButton](https://github.com/dazhaoDai/FloatingActionButtonDemo),库不大，但是功能齐全。
+
+如果有特别需求，也可以根据库改写，里面注释很详细，很好理解，或者到简书下留言，期待大家共同把这个库完善起来
+
+使用起来很简单，只需要两步 ：依赖、布局， 就可以完成
+
+#### 1.添加依赖
+
 添加依赖，在项目的build.gradle中添加```compile 'com.ddz.materialdesign:FloatingActionButton:1.0.2'```
 
-###### 2. 布局
+#### 2. 布局
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -320,3 +327,9 @@ FloatingActionMenu有展开折叠的监听事件
         fl_button.setColorNormal(getResources().getColor(R.color.colorAccent));
         fl_button.setColorPressed(getResources().getColor(R.color.colorAccent));
 ```
+
+#### 写在最后
+如果有特殊需求，大家可以star 或者 fork一份，进行完善， 也欢迎大家提出更好的方法
+感谢 
+> http://luckymin.com/
+> https://github.com/futuresimple/android-floating-action-button
